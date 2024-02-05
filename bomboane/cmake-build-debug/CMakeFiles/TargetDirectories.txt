@@ -1,0 +1,3 @@
+C:/Users/edwrd/CLionProjects/SDA/bomboane/cmake-build-debug/CMakeFiles/bomboane.dir
+C:/Users/edwrd/CLionProjects/SDA/bomboane/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/edwrd/CLionProjects/SDA/bomboane/cmake-build-debug/CMakeFiles/rebuild_cache.dir

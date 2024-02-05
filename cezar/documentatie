@@ -1,0 +1,16 @@
+Adaugam intr-o coada toate nodurile care au gradul 1 (frunze).
+Parcurgem nodurile din coada.
+Pentru fiecare astfel de nod:
+- il marcam ca vizitat
+- adaugam costul sau la costul minim
+- parcurgem toti vecinii lui care nu au fost vizitati
+    - scadem gradul vecinului cu 1 ("eliminam" parintele)
+    - adaugam la costul sau costul parintelui (in vectorul de costuri)
+    - daca vecinul are acum gradul 1 atunci il adaugam in coada
+Astfel cautam n-k-1 drumuri cu cel mai mic cost (drumuri parcurse de cat mai putini senatori)
+din exterior spre interior pentru a ajunge la sala de sedinta (radacina). Prin urmare, drumurile parcurse
+de mai multi senatori care ar avea un cost mare vor fi selectate ca fiind cele gratis.
+
+Complexitate (N-K)logN - operatii pe heap
+
+Am folosit heap pentru ca era cea mai usoara metoda de a memora si parcurge frunzele in ordine crescatoare dupa costul senatorilor.

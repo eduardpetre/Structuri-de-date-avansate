@@ -1,0 +1,14 @@
+Parcurgem cu ajutorul unei structuri repetitve de tip while cele n numere.
+Daca numarul curent este mai mare decat unul sau mai multe numere din stiva, acestea sunt eliminate,
+iar daca stiva are cel putin 2 numere atunci s-a gasit o groapa.
+
+Dupa ce sunt eliminate numerele din stiva mai mici decat numarul curent, acesta este adaugat in stiva
+si se continua cu urmatorul numar.
+
+Astfel elementele stivei sunt in ordine descrescatoare. Cand se gaseste un numar care ar modifica aceasta ordine,
+atunci am gasit o groapa.
+
+Complexitate: O(N)
+
+Am folosit stiva (LIFO) pentru a memora numerele sirului de care avem nevoie pentru a determina gropile. Aceasta contine
+pe rand capetele gropilor.

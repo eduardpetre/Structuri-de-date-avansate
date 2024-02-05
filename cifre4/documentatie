@@ -1,0 +1,29 @@
+1. Citim T, numarul de teste
+
+2. Parcurgem cele T teste folosind o structura repetitiva de tip while
+
+3. Citim N, P si incercam sa aflam cel mai mic y cu proprietatea y % P == N, y fiind format din cifre incluse in multimea c = {2, 3, 5, 7}
+
+4. Definim vectorul r in care vom memora daca un anumit rest a mai fost parcurs sau nu
+
+5. Definim o coada q in care vom adauga pe rand toate numerele formate din cifrele multimii c, in ordine crescatoare
+
+6. Definim o variabila gasit care ia initial valoarea 0 pentru a ne opri odata ce am gasit numarul y
+
+7. Parcurgem numerele din coada cat timp numarul nu a fost gasit
+
+8. Stocam primul numar din coada, implicit cel mai mic, in variabila x si apoi il eliminam din coada
+
+9. Parcurgem multimea de cifre c din care poate fi format numarul y
+
+10. Adaugam in coada numerele care pot fi formate din numarul x alipind la final cifra c[i]
+
+11. Verificam daca restul impartirii acestui numar la P a mai fost gasit si in caz contrar verificam daca este egal cu N
+    - Daca da, atunci am gasit cel mai mic numar y care impartit la P da restul N si este format din cifrele {2, 3, 5, 7} si ne oprim
+    - Altfel, notam faptul ca am parcurs acest rest si adaugam numarul in coada si continuam cu urmatorul numar din coada
+
+    Complexitate O(P)
+    - in cel mai rau caz parcurgem toate resturile impartirii la P
+
+    Am folosid coada pentru ca a fost cea mai simpla modalitate de a parcurge numerele formate din cifrele 2, 3, 5, 7 in ordine crescatoare,
+generate pe rand in functie de numarul curent

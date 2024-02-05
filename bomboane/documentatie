@@ -1,0 +1,14 @@
+Se calculeaza totalul de bomboane si se face media.
+In cazul in care media nu este un numar intreg, atunci nu exista solutie si se afiseaza -1.
+Se definesc un maxHeap si un minHeap in care se vor adauga cutiile cu bomboane care au un
+numar de bomboane mai mare, respectiv mai mic, decat media.
+
+Se parcurg cutiile de bomboane din fiecare heap, mutand bomboanele de la cutia cu cele mai multe la cutia cu cele mai putine.
+Mutarile sunt memorate intr-un vector pentru a putea fi afisate la sfarsit.
+Daca dupa o mutare numarul de bomboane este in continuare mai mare sau mai mic in respectivele cutii, atunci se actualizeaza
+si se adauga iar in heap. Altfel se elimina din heap.
+
+Complexitate: O(NlogN) - operatii pe heap
+
+Am ales heap-ul pentru ca a fost o modalitate simpla sa implementez un algoritm de tip greedy
+pentru a face mutarile intre cutia cu cele mai multe bomboane si cutia cu cele mai putine.
